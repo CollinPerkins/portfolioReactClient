@@ -1,7 +1,20 @@
-.error {
-  color: red;
+nav ul {
+  display: inline;
+}
+
+nav li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
-  display: inline;
+  list-style: none;
+}
+
+.error {
+  background-color: red;
+  color: white;
 }
