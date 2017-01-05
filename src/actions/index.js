@@ -7,7 +7,7 @@ import {
   FETCH_MESSAGE
 } from './types';
 
-const ROOT_URL = 'http://localhost:3090';
+const ROOT_URL = 'https://still-sierra-12733.herokuapp.com/';
 
 export function signinUser({ email, password }) {
   return function(dispatch) {
