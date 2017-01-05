@@ -2,6 +2,20 @@ nav ul {
   display: inline;
 }
 
+nav ul a {
+  color: #936FB1;
+}
+
+nav ul a:hover {
+  text-decoration: none;
+  color: #936FB1;
+}
+
+nav ul a:focus {
+  text-decoration: none;
+  color: #936FB1;
+}
+
 nav li {
   display: inline;
 }
