@@ -8,6 +8,8 @@ import {
 } from './types';
 
 const ROOT_URL = 'https://still-sierra-12733.herokuapp.com/';
+// http://localhost:3090
+// https://still-sierra-12733.herokuapp.com/
 
 export function signinUser({ email, password }) {
   return function(dispatch) {
