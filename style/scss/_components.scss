@@ -1,1 +1,48 @@
+#portfolio {
+  select {
+    display: block;
+    margin: 40px auto 20px auto;
+    text-align: center;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    &:hover {
+      background-color: $brand-primary-color;
+      color: white;
+      cursor: pointer;
+    }
+    &:focus {
+      border: none;
+      background-color: transparent;
+      color: black;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+  li {
+    margin-top: 25px;
+  }
+  .portImg {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+  }
 
+  .portHeader {
+    text-align: center;
+  }
+
+  a {
+    text-align: center;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .block {
+    margin-top: 10px;
+    display: block;
+  }
+}

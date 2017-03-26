@@ -1,21 +1,34 @@
+.pull-right {
+  margin-bottom: 0;
+}
 nav {
+  margin-bottom: 25px;
   ul{
+    padding-left: 0;
     display: inline;
-    a {
-      color: $brand-primary-color;
-      &:hover {
-        text-decoration: none;
+    li {
+      display: inline;
+      a {
+        padding-right: 20px;
+        text-align: center;
         color: $brand-primary-color;
-      }
-      &:focus {
-        text-decoration: none;
-        color: $brand-primary-color;
+        &:hover {
+          text-decoration: none;
+          color: $brand-primary-color;
+        }
+        &:focus {
+          text-decoration: none;
+          color: $brand-primary-color;
+        }
       }
     }
-
   }
-  li {
-    display: inline;
-
+  .topNav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+  }
+  .bottomNav {
+    margin-top: 15px;
   }
 }

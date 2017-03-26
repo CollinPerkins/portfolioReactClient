@@ -12,6 +12,11 @@ import Signup from './components/auth/signup';
 import Feature from './components/feature';
 import RequireAuth from './components/auth/require_auth';
 import Welcome from './components/welcome';
+import AboutMe from './components/mainLinkPages/aboutme';
+import ContactMe from './components/mainLinkPages/contactme';
+import Experience from './components/mainLinkPages/experience';
+import Portfolio from './components/mainLinkPages/portfolio';
+import Blog from './components/mainLinkPages/blog';
 import reducers from './reducers';
 import { AUTH_USER } from './actions/types';
 
@@ -29,12 +34,16 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={App}>
-        <IndexRoute component={Welcome} />
+        <IndexRoute component={AboutMe} />
         <Route path="signin" component={Signin} />
         <Route path="signout" component={Signout} />
         <Route path="signup" component={Signup} />
         <Route path="feature" component={RequireAuth(Feature)} />
+        <Route path="contactme" component={ContactMe} />
+        <Route path="experience" component={Experience} />
+        <Route path="portfolio" component={Portfolio} />
+        <Route path="blog" component={Blog} />
       </Route>
     </Router>
   </Provider>
-  , document.querySelector('.container'));
+  , document.querySelector('.myApp'));
