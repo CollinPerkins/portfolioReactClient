@@ -41,6 +41,13 @@
 #randomQuoteMachine {
   text-align: center; }
 
+#localWeather {
+  text-align: center; }
+  #localWeather div {
+    margin: 0 auto; }
+  #localWeather .hide {
+    display: none; }
+
 .pull-right {
   margin-bottom: 0; }
 

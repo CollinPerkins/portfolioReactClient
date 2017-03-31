@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import * as actions from '../../../actions';
 import $ from 'jquery';
 
-class Feature extends Component {
+class RandomQuoteMachine extends Component {
   constructor(props) {
     super(props);
 
@@ -44,7 +44,7 @@ class Feature extends Component {
         <h2>-{this.state.author ? this.state.author : 'Unkown Author'}-</h2>
         <h3>{this.state.text}</h3>
         <button className="btn btn-primary" onClick={this.newQuote}>New Quote</button>
-        <a href={`https://twitter.com/intent/tweet?text==${this.state.author}: ${this.state.text}.`} target="_blank">Twitter</a>
+        <a href={`https://twitter.com/intent/tweet?text=${this.state.author}: ${this.state.text}.`} target="_blank">Twitter</a>
       </div>
     );
   }
@@ -54,4 +54,4 @@ function mapStateToProps(state) {
   return { message: state.auth.message };
 }
 
-export default connect(mapStateToProps, actions)(Feature);
+export default connect(mapStateToProps, actions)(RandomQuoteMachine);

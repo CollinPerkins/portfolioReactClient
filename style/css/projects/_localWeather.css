@@ -1,0 +1,6 @@
+#localWeather {
+  text-align: center; }
+  #localWeather div {
+    margin: 0 auto; }
+  #localWeather .hide {
+    display: none; }

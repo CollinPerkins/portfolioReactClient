@@ -42,6 +42,8 @@ export default class Portfolio extends Component {
     return (
       <div id="portfolio">
         <Link className="" to="/randomQuoteMachine">Random Quote Machine</Link>
+        <br />
+        <Link className="" to="/localWeather">Local Weather App</Link>
         <select id="lang" onChange={this.filter} value={this.state.language}>
           <option value="all">All Projects</option>
           <option value="html">HTML</option>
