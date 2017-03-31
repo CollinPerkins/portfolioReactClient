@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import { projectList } from '../projects/projectList.js'
 
 export default class Portfolio extends Component {
@@ -40,6 +41,7 @@ export default class Portfolio extends Component {
 
     return (
       <div id="portfolio">
+        <Link className="" to="/randomQuoteMachine">Random Quote Machine</Link>
         <select id="lang" onChange={this.filter} value={this.state.language}>
           <option value="all">All Projects</option>
           <option value="html">HTML</option>

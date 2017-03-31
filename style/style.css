@@ -5,103 +5,75 @@
   font-size: 30px;
   background-color: transparent;
   border: none;
-  padding: 5px 10px;
-}
-
-#portfolio select:hover {
-  background-color: #3498DB;
-  color: white;
-  cursor: pointer;
-}
-
-#portfolio select:focus {
-  border: none;
-  background-color: transparent;
-  color: black;
-  cursor: pointer;
-  outline: none;
-}
+  padding: 5px 10px; }
+  #portfolio select:hover {
+    background-color: #3498DB;
+    color: white;
+    cursor: pointer; }
+  #portfolio select:focus {
+    border: none;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    outline: none; }
 
 #portfolio li {
-  margin-top: 25px;
-}
+  margin-top: 25px; }
 
 #portfolio .portImg {
   max-width: 200px;
   max-height: 200px;
   display: block;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 #portfolio .portHeader {
-  text-align: center;
-}
+  text-align: center; }
 
 #portfolio a {
-  text-align: center;
-}
-
-#portfolio a:hover {
-  text-decoration: none;
-}
+  text-align: center; }
+  #portfolio a:hover {
+    text-decoration: none; }
 
 #portfolio .block {
   margin-top: 10px;
-  display: block;
-}
+  display: block; }
+
+#randomQuoteMachine {
+  text-align: center; }
 
 .pull-right {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 nav {
-  margin-bottom: 25px;
-}
-
-nav ul {
-  padding-left: 0;
-  display: inline;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  padding-right: 20px;
-  text-align: center;
-  color: #3498DB;
-}
-
-nav ul li a:hover {
-  text-decoration: none;
-  color: #3498DB;
-}
-
-nav ul li a:focus {
-  text-decoration: none;
-  color: #3498DB;
-}
-
-nav .topNav {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: black;
-}
-
-nav .bottomNav {
-  margin-top: 15px;
-}
+  margin-bottom: 25px; }
+  nav ul {
+    padding-left: 0;
+    display: inline; }
+    nav ul li {
+      display: inline; }
+      nav ul li a {
+        padding-right: 20px;
+        text-align: center;
+        color: #3498DB; }
+        nav ul li a:hover {
+          text-decoration: none;
+          color: #3498DB; }
+        nav ul li a:focus {
+          text-decoration: none;
+          color: #3498DB; }
+  nav .topNav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black; }
+  nav .bottomNav {
+    margin-top: 15px; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 .error {
   background-color: red;
-  color: white;
-}
+  color: white; }
