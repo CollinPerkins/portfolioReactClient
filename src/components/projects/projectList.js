@@ -1,16 +1,23 @@
 export const projectList = [
+  // {
+  //   name: 'Gorillaz Tribute Page',
+  //   technologies: ['all', 'html', 'css'],
+  //   link: "#",
+  //   github: "#",
+  //   imageUrl: "https://www.colourbox.com/preview/12345786-under-construction-blue-grunge-seal-isolated-on-white.jpg"
+  // },
   {
-    name: 'Gorillaz Tribute Page',
-    technologies: ['all', 'html', 'css'],
-    link: "#",
-    github: "#",
+    name: 'Markdown Previewer',
+    technologies: ['all', 'react', 'redux'],
+    link: "https://mysterious-dawn-98872.herokuapp.com/",
+    github: "https://github.com/CollinPerkins/reactMarkdownPreviewer",
     imageUrl: "https://www.colourbox.com/preview/12345786-under-construction-blue-grunge-seal-isolated-on-white.jpg"
   },
   {
     name: 'Random Quote Machine',
-    technologies: ['all', 'react', 'redux'],
-    link: "https://afternoon-tor-42773.herokuapp.com/",
-    github: "https://github.com/CollinPerkins/reactQuote",
+    technologies: ['all', 'jquery', 'css', 'html', 'bootstrap'],
+    link: "https://collinperkins.github.io/jqueryQuote/",
+    github: "https://github.com/CollinPerkins/jqueryQuote",
     imageUrl: "https://www.colourbox.com/preview/12345786-under-construction-blue-grunge-seal-isolated-on-white.jpg"
   },
   {
@@ -48,20 +55,20 @@ export const projectList = [
     github: "#",
     imageUrl: "https://www.colourbox.com/preview/12345786-under-construction-blue-grunge-seal-isolated-on-white.jpg"
   },
-  {
-    name: 'Tic Tac Toe Game',
-    technologies: ['all', 'react', 'redux'],
-    link: "#",
-    github: "#",
-    imageUrl: "https://www.colourbox.com/preview/12345786-under-construction-blue-grunge-seal-isolated-on-white.jpg"
-  },
-  {
-    name: 'Simon Game',
-    technologies: ['all', 'react', 'redux'],
-    link: "#",
-    github: "#",
-    imageUrl: "https://www.colourbox.com/preview/12345786-under-construction-blue-grunge-seal-isolated-on-white.jpg"
-  },
+  // {
+  //   name: 'Tic Tac Toe Game',
+  //   technologies: ['all', 'react', 'redux'],
+  //   link: "#",
+  //   github: "#",
+  //   imageUrl: "https://www.colourbox.com/preview/12345786-under-construction-blue-grunge-seal-isolated-on-white.jpg"
+  // },
+  // {
+  //   name: 'Simon Game',
+  //   technologies: ['all', 'react', 'redux'],
+  //   link: "#",
+  //   github: "#",
+  //   imageUrl: "https://www.colourbox.com/preview/12345786-under-construction-blue-grunge-seal-isolated-on-white.jpg"
+  // },
   {
     name: 'Timestamp microservice',
     technologies: ['all', 'node', 'pug', 'express', 'mongodb'],
@@ -90,11 +97,11 @@ export const projectList = [
     github: "https://github.com/CollinPerkins/fileUpload",
     imageUrl: "https://www.colourbox.com/preview/12345786-under-construction-blue-grunge-seal-isolated-on-white.jpg"
   },
-  {
-    name: 'FullStack Projects',
-    technologies: ['fullstack'],
-    link: "#",
-    github: "#",
-    imageUrl: "#"
-  }
+  // {
+  //   name: 'FullStack Projects',
+  //   technologies: ['fullstack'],
+  //   link: "#",
+  //   github: "#",
+  //   imageUrl: "#"
+  // }
 ];

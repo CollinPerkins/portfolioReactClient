@@ -9,7 +9,7 @@ class Feature extends Component {
 
   render() {
     return (
-      <div>{this.props.message}</div>
+      <div>Welcome to the fullstack projects page! Currently this is under construction will be updated soon!</div>
     );
   }
 }

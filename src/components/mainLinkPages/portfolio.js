@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { projectList } from './projectList/projectList.js'
+import { projectList } from '../projects/projectList.js'
 
 export default class Portfolio extends Component {
   constructor(props) {
