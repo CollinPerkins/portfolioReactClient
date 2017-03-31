@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Loading from 'react-loading';
 import { connect } from 'react-redux';
 import * as actions from '../../../actions';
 import axios from 'axios';
@@ -11,19 +10,19 @@ class LocalWeather extends Component {
     super(props);
 
     this.state = {
-      isLoading: true,
-      weather: ""
+      weather: {},
+      city: "",
+      country: "US",
+      searched: false
     };
 
     this.getWeather = this.getWeather.bind(this);
-}
-
-  componentWillMount() {
-    this.getWeather();
+    this.cityChange = this.cityChange.bind(this);
+    this.countryChange = this.countryChange.bind(this);
   }
 
   getWeather() {
-    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${"Dallas"},${"US"}&&APPID=265aef4d63230a48ab0446fe91afec9a`).then(res => {
+    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.city},${this.state.country}&&APPID=265aef4d63230a48ab0446fe91afec9a`).then(res => {
 
       var weather = {
         country: res.data.sys.country,
@@ -36,18 +35,32 @@ class LocalWeather extends Component {
       console.log(weather);
       this.setState({
         weather: weather,
-        isLoading: false
+        isLoading: false,
+        searched: true
       });
     })
+  }
+
+  cityChange(event) {
+    this.setState({city: event.target.value});
+    console.log(this.state);
+  }
+
+  countryChange(event) {
+    this.setState({country: event.target.value});
+    console.log(this.state);
   }
 
   render() {
     return (
       <div id="localWeather">
+        <input placeholder="City" value={this.state.city} onChange={this.cityChange}></input>
+        <input placeholder="Country" value={this.state.country} onChange={this.countryChange}></input>
+        <button onClick={this.getWeather}>Get Weather</button>
         {
-          this.state.isLoading ?
-          <Loading type='spin' color='black' /> :
-          <Weather weather={this.state.weather} />
+          this.state.searched ?
+          <Weather weather={this.state.weather} />:
+          "Please Try Again"
         }
       </div>
     );
