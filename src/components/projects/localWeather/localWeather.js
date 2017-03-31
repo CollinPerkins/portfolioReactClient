@@ -23,30 +23,21 @@ class LocalWeather extends Component {
   }
 
   getWeather() {
-    let prom = new Promise(function (resolve, reject) {
-      navigator.geolocation.getCurrentPosition(function(position) {
-          resolve(position)
-          console.log(position);
-      });
-    });
+    axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${"Dallas"},${"US"}&&APPID=265aef4d63230a48ab0446fe91afec9a`).then(res => {
 
-    // Use promise return to get json data from weather api.
-    prom.then((value) => {
-      axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=${value.coords.latitude}&lon=${value.coords.longitude}&&APPID=265aef4d63230a48ab0446fe91afec9a`).then(res => {
-        var weather = {
-          country: res.data.sys.country,
-          city: res.data.name,
-          main: res.data.weather[0].main,
-          iconId: "wi wi-owm-" + res.data.weather[0].id,
-          temp: (res.data.main.temp * 9/5) - 459.67,
-          isLoading: false
-        }
-        console.log(res);
-        this.setState({
-          weather: weather,
-          isLoading: false
-        });
-      }).bind(this);
+      var weather = {
+        country: res.data.sys.country,
+        city: res.data.name,
+        main: res.data.weather[0].main,
+        iconId: "wi wi-owm-" + res.data.weather[0].id,
+        temp: (res.data.main.temp * 9/5) - 459.67,
+        isLoading: false
+      }
+      console.log(weather);
+      this.setState({
+        weather: weather,
+        isLoading: false
+      });
     })
   }
 
@@ -55,7 +46,7 @@ class LocalWeather extends Component {
       <div id="localWeather">
         {
           this.state.isLoading ?
-          <Loading type='spin' color='black' /> :            
+          <Loading type='spin' color='black' /> :
           <Weather weather={this.state.weather} />
         }
       </div>
