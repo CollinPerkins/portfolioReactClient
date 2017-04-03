@@ -46,9 +46,6 @@ export default class App extends Component {
 
         </div>
         <WikiList wikiData={this.state.wikiData} gotData={this.state.gotData}/>
-        <h3>
-          <a href="https://github.com/CollinPerkins/reactWiki" target="_blank">Github Link for React Wiki App</a>
-        </h3>
       </div>
     );
   }

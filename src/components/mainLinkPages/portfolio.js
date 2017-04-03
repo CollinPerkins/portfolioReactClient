@@ -46,6 +46,8 @@ export default class Portfolio extends Component {
         <Link className="" to="/localWeather">Local Weather App</Link>
         <br />
         <Link className="" to="/wikiViewer">Wiki Viewer</Link>
+        <br />
+        <Link className="" to="/twitchApp">Twitch</Link>
         <select id="lang" onChange={this.filter} value={this.state.language}>
           <option value="all">All Projects</option>
           <option value="html">HTML</option>

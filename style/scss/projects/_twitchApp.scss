@@ -1,0 +1,32 @@
+#twitchApp {
+  .right {
+    text-align: right;
+  }
+  .quoteSize {
+    font-size: 30px;
+  }
+
+  .quoteConainer {
+    margin: 0 auto;
+    margin-top: 35%;
+    background-color: white;
+  }
+
+  .centerText {
+    text-align: center;
+  }
+
+  .filtered {
+    background-color: red;
+  }
+
+  .notFiltered {
+    background-color: green;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+}
