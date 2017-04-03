@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import * as actions from '../../../actions';
 import axios from 'axios';
 
 import Weather from './weather'
 
-class LocalWeather extends Component {
+export default class LocalWeather extends Component {
   constructor(props) {
     super(props);
 
@@ -66,9 +64,3 @@ class LocalWeather extends Component {
     );
   }
 }
-
-function mapStateToProps(state) {
-  return { message: state.auth.message };
-}
-
-export default connect(mapStateToProps, actions)(LocalWeather);
